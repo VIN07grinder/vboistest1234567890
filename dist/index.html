@@ -17,16 +17,32 @@
         * {
             font-family: inter;
         }
+
+        body, html {
+            background-color: var(--color-slate-950);
+        }
     </style>
-  <script type="module" crossorigin src="./assets/index-CoHTkVfV.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-x5DGEkn5.css">
 </head>
 
-<body class="bg-blue-500">
+<body class="black">
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
 
     <div id="app"></div>
+    <script type="module" lang="ts">
+        import App from './src/App.svelte';
+        import proxyManager from "./src/proxy.svelte";
+        import './src/app.css';
+        import { mount } from "svelte";
+
+        // stfu vite
+        proxyManager.uvConfig = __uv$config;
+        proxyManager.initializeProxy();
+
+        const app = mount(App, {
+            target: document.getElementById('app')
+        });
+    </script>
 </body>
 
 </html>
