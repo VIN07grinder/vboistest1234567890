@@ -58,7 +58,7 @@
         <p class="text-4xl font-extrabold mt-4">preferences</p>
         <div class="flex flex-col items-center grow-1 justify-center w-1/1">
             <div class="grid grid-cols-2 gap-5 w-1/1">
-                <p class="flex items-center justify-center">wisp or bare?</p>
+                <p class="flex items-center justify-center">Wisp or Bare?</p>
                 <div class="dropdown rounded-xl">
                     <div
                         tabindex="0"
@@ -92,7 +92,7 @@
                         </li>
                     </ul>
                 </div>
-                <p class="flex items-center justify-center">wisp/bare server</p>
+                <p class="flex items-center justify-center">Wisp/Bare Server</p>
                 <div class="dropdown rounded-xl shadow-transparent bg-zinc-800 shadow-none border-none hover:shadow-none hover:border-none transition-all">
                     <div
                         tabindex="0"
@@ -145,7 +145,7 @@
                         }
                     />
                 {/if}
-                <p class="flex items-center justify-center">adblock</p>
+                <p class="flex items-center justify-center">Adblock</p>
                 <div class="flex items-center justify-center">
                     <input
                         type="checkbox"
