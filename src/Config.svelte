@@ -23,7 +23,7 @@
     });
 
     if (document.title) {
-        document.title = localStorage.getItem("tabTitle") || "ethereal";
+        document.title = localStorage.getItem("tabTitle") || "Vboi's Proxy";
     }
 
     const faviconElement =
