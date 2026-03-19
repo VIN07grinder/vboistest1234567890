@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vin's Proxy</title>
     <style>
@@ -27,7 +29,14 @@
 <body class="black">
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
+    <!-- BACKGROUND BLOBS -->
+    <div class="blob"></div>
+    <div class="blobbig"></div>
+    <div class="blobsmall"></div>
+    <div class="blobtop"></div>
 
+    <!-- PARTICLES BACKGROUND -->
+    <div id="particles-js"></div>
     <div id="app"></div>
     <script type="module" lang="ts">
         import App from './src/App.svelte';
@@ -42,6 +51,29 @@
         const app = mount(App, {
             target: document.getElementById('app')
         });
+    </script>
+    <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 86, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 1, random: true },
+        size: { value: 2, random: true },
+        line_linked: { enable: false },
+        move: {
+          enable: true,
+          speed: 0.5,
+          direction: "top",
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        detect_on: "window",
+        events: { resize: true }
+      },
+      retina_detect: true
+    });
     </script>
 </body>
 
