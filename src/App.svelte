@@ -128,7 +128,7 @@
         >
         <input
             type="text"
-            class="input max-w-2/3 h-8 min-w-2/3 rounded-full focus:shadow-none focus:border-none focus:brightness-125 transition-all p-5 focus:outline-none outline-none border-none shadow-none"
+            class="input max-w-2/3 h-8 min-w-2/3 rounded-full focus:shadow-none focus:border-none focus:brightness-125 transition-all p-5 focus:outline-none outline-none border-none shadow-none glass-input"
             title="Destination URL"
             id="searchbar"
             placeholder="loading, please wait. this may take some time."
@@ -192,7 +192,7 @@
         >
         <input
             type="text"
-            class="input max-w-2/3 h-8 min-w-2/3 rounded-full p-5 focus:outline-none focus:shadow-none focus:border-none focus:brightness-125 transition-all outline-none shadow-none border-none"
+            class="input max-w-2/3 h-8 min-w-2/3 rounded-full p-5 focus:outline-none focus:shadow-none focus:border-none focus:brightness-125 transition-all outline-none shadow-none border-none glass-input"
             title="Destination URL"
             placeholder="search anything..."
             onkeydown={onEnterKeyPressed(startProxy)}
