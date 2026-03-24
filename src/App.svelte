@@ -227,7 +227,7 @@
         >
     </div>
     <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-4/5 items-center text-center">
-        <h1 class="text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-purple-400">Vin's Prxy</h1>
+        <h1 class="text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-purple-400" style="line-height: 1.2;">Vin's Prxy</h1>
         <p>A sleek prxy with speed, design, and usability in mind.</p>
     </div>
 
