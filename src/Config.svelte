@@ -23,7 +23,7 @@
     });
 
     if (document.title) {
-        document.title = localStorage.getItem("tabTitle") || "Vboi's Proxy";
+        document.title = localStorage.getItem("tabTitle") || "Vin's Prxy";
     }
 
     const faviconElement =
